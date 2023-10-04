@@ -13,25 +13,88 @@ body{
 }
 main{
 	background-color: #d1c2c2cc;
-	
+	padding: 1rem;
 }
 body > header{
 	background-color: #515459;
 	border-bottom:solid 0.15rem #da3a20 ;
+}
+body > header > div{
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	width: 100%;
+	justify-content: space-between;
 }
-body > header > img{
+body > header > div > img{
 	width: 5rem;
 }
-body > header > a:nth-child(1){
+body > header > div > button:nth-child(1){
 	margin: 1rem;
+	border-style: none;
+	background-color: #515459;
+	cursor: pointer;
+	display: none;
 }
-body > header > a:nth-child(3){
-	margin: 1rem;
+
+@media screen and (max-width: 47.5rem){
+	body > header > div > button:nth-child(1){
+		display: block;
+	}
+	.menu_web{
+		display: none;
+	}
+	body > main > section:nth-child(2){
+	
+	flex-direction: column;
+	}
+	.section_cards{
+		flex-direction: column;
+	}
 }
-.btn-solic{
+
+
+/* MENU WEB */
+.menu_web ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.menu_web li{
+	margin: 0.5rem;
+	margin-left: 1rem;
+}
+.menu_web a{
+	text-decoration: none;
+	color: #1f1a1a;
+	font-weight: bold;
+}
+/* MENU WEB */
+
+/* MENU MOBILE */
+.menu_mobile{
+	display: none;
+}
+.menu_mobile ul{
+	list-style: none;
+}
+.menu_mobile li{
+	margin: 0.5rem;
+	margin-left: 1rem;
+}
+.menu_mobile a{
+	text-decoration: none;
+	color: #1f1a1a;
+	font-weight: bold;
+}
+/* MENU MOBILE */
+
+/* CLASSE DISPLAY BLOCK */
+.dBlock{
+	display: block;
+}
+/* CLASSE DISPLAY BLOCK */
+
+.btn-site{
 	background-color:#da3a20;
 	padding: 0.8rem 1.5rem 0.8rem 1.5rem;
 	border-radius: 0rem 4rem 0rem 4rem;
@@ -40,12 +103,12 @@ body > header > a:nth-child(3){
 	text-decoration: none;
 	font-size: 0.8rem;
 	margin: 1rem;
+	font-weight: bold;
 }
-body > nav > a:link,a:visited{
+a:link,a:visited{
 	text-decoration: none;
-	color: #1f1a1a;
 }
-nav{
+body > nav{
 	background-color: #d1c2c2cc;
 	color: #1f1a1a;
 	padding-left: 1rem;
@@ -56,38 +119,14 @@ h1{
 	color: #1F1A1A;
 	font-family: 'Mulish', sans-serif;
 	font-weight: bold;
-	padding: 1rem;
-}
-body > main > section:nth-child(1){
-	text-align: start;
-}
-
-body > main:nth-child(3) > section:nth-child(1) > p:nth-child(2){
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-body > main > section:nth-child(2) > div:nth-child(1){
-	margin: 1rem;
-	width: 20.0625rem;
-}
-body > main > section:nth-child(2) > div > div:nth-child(1){
-	background: #da3a20;
-	padding: 1rem;
-	color: #1F1A1A;
-	text-align: center;
-}
-body > main > section:nth-child(2) > div > div:nth-child(2){
-	width: 0rem;
-	height: 0rem;
-	border-top: 4rem solid #da3a20;
-	border-left:  10.03rem solid transparent;
-	border-right: 10.03rem solid transparent;
-	border-bottom: 0rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 .card{
 	border-radius: 1.8rem;
 	border: 0.15rem solid #da3a20;
-	margin: 1rem;
+	margin: 0.5rem;
+
 	background-color: #d1c2c2;
 	text-align: center;
 	color: #1F1A1A;
@@ -95,65 +134,41 @@ body > main > section:nth-child(2) > div > div:nth-child(2){
 	flex-direction: column;
 	align-items: center;
 }
-body > main > section.card > div{
+
+.section_cards{
+	display: flex;
+	justify-content: center;
+}
+body > main > section > section.card > div{
 	border-radius: 1.8rem 1.8rem 0rem 0rem;
 	height: 9rem;
 	width: 100%;
 	background-size: cover;
     background-position: center;
 }
-body > main > section:nth-child(4){
+body > main > section > section.card > h2{
 	text-align: center;
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
-body > main > section:nth-child(5) > div{
+body > main > section > section.card > p{
+	padding: 1rem;
+}
+#img_pedreiro{
 	background-image: url("../img/pedreiro.png");
 }
-body > main > section:nth-child(6) > div{
+#img_hidraulica{
 	background-image: url("../img/hidraulica.png");
 }
 
-body > main > section:nth-child(7) > div{
+#img_eletrica{
 	background-image: url("../img/eletricista.png");
 }
-body > main > section.card > p{
-	padding: 1rem;
-}
-body > main > section:nth-child(3){
-	border-radius: 1.8rem;
-	border: 0.15rem solid #da3a20;
-	padding: 1rem;
-	margin: 1rem;
-	background-color: #515459;
-	color: #1F1A1A;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-body > main > section:nth-child(3) > div{
-	overflow-y: auto;
-	height: 15rem;
-}
-table{
-	width: 100%;
-	table-layout: fixed;
-}
-td{
-	width: 5rem;
-	word-wrap: break-word;
-	padding: 0.2rem;
-}
-table, th, td{
-	border: 0.2rem solid #1F1A1A;
-	border-collapse: collapse;
-	background-color: #d1c2c2;
-}
-body > main > section:nth-child(4){
-	text-align: center;
-	color: #1F1A1A;
-}
+
+
+
+
+
 body > footer{
 	background-color: #515459;
 	border-top: solid 0.15rem #da3a20 ;
