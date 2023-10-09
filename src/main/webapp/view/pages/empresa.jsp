@@ -12,7 +12,7 @@
 	<%@include file="./components/menu.jsp" %>
 	<nav>
 		<span>
-			<a href="index.jsp">Inicio</a>
+			<a href="../index.jsp">Inicio</a>
 		</span>
 		<span>></span>
 		<span>Empresa</span>
@@ -34,5 +34,5 @@
 	</main>
 	<%@include file="./components/footer.jsp"%>
 </body>
-<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/site.js"></script>
 </html>

@@ -13,11 +13,16 @@
 	UsuarioDao dao = new UsuarioDao();
 	try {
 		if (request.getParameter("email").equals("") || request.getParameter("senha").equals("")) {
-			response.sendRedirect("index.jsp");
+			%>
+			<script type="text/javascript">
+				alert("Preencha e-mail e senha!")
+			</script>
+			<%
+			response.sendRedirect("pages/login.jsp");
 		} else {
 			usuario = dao.logar(request.getParameter("email"), request.getParameter("senha"));
 			if (usuario.getId() == 0) {
-				response.sendRedirect("index.jsp?erro=USUARIO_NAO_EXISTE");
+				response.sendRedirect("pages/login.jsp?erro=USUARIO_NAO_EXISTE");
 			} else {
 		session.setAttribute("usuarioAut", usuario);
 		response.sendRedirect("home.jsp");

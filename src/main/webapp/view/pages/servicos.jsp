@@ -11,7 +11,7 @@
 <body>
 	<%@include file="./components/menu.jsp"%>
 	<nav>
-		<span> <a href="index.jsp">Inicio</a>
+		<span> <a href="../index.jsp">Inicio</a>
 		</span> <span>></span> <span>Serviços</span>
 	</nav>
 	<main>
@@ -57,6 +57,6 @@
 		</section>
 	</main>
 	<%@include file="./components/footer.jsp"%>
-	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/site.js"></script>
 </body>
 </html>

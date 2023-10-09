@@ -7,7 +7,7 @@
 			<nav class="menu_web">
 				<ul>
 					<li>
-						<a href="index.jsp">HOME</a>
+						<a href="../index.jsp">HOME</a>
 					</li>
 					<li>
 						<a href="servicos.jsp">SERVIÇOS</a>
@@ -20,12 +20,12 @@
 					</li>
 				</ul>
 			</nav>
-			<a href="#" class="btn-site">Solicite um orçamento</a>
+			<a href="login.jsp" class="btn-site">Solicite um orçamento</a>
 		</div>
 		<nav class="menu_mobile">
 				<ul>
 					<li>
-						<a href="index.jsp">HOME</a>
+						<a href="../index.jsp">HOME</a>
 					</li>
 					<li>
 						<a href="servicos.jsp">SERVIÇOS</a>
