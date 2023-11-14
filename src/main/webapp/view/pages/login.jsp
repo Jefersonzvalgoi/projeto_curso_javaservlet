@@ -47,7 +47,6 @@
 					alert("Usuario não existe!")
 				</script>
 				<%
-				
 				}
 	%>
 	<script type="text/javascript" src="../js/site.js"></script>

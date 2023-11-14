@@ -13,11 +13,6 @@
 	UsuarioDao dao = new UsuarioDao();
 	try {
 		if (request.getParameter("email").equals("") || request.getParameter("senha").equals("")) {
-			%>
-			<script type="text/javascript">
-				alert("Preencha e-mail e senha!")
-			</script>
-			<%
 			response.sendRedirect("pages/login.jsp");
 		} else {
 			usuario = dao.logar(request.getParameter("email"), request.getParameter("senha"));
